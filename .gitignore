@@ -7,7 +7,6 @@ venv/
 .pytest_cache/
 **__pycache__/
 db.sqlite3
-requirements.txt
 # Created by https://www.toptal.com/developers/gitignore/api/python,django,pycharm
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,django,pycharm
 
