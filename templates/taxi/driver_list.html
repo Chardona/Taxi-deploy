@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Driver List
+    <a href="{% url 'taxi:driver-create' %}"><button class="btn btn-primary" style="float:right">Add driver</button></a></h1>
+
+    <form action="" method="get">
+    {{ search_form  }}
+        <input type="submit"  class="btn btn-dark" value="🔎">
+    </form>
+
+    {% if driver_list %}
+    <table class="table">
+      <tr>
+        <th>ID</th>
+        <th>Username</th>
+        <th>First name</th>
+        <th>Last name</th>
+        <th>License number</th>
+      </tr>
+    {% for driver in driver_list %}
+      <tr>
+        <td>{{ driver.id }}</td>
+        <td><a href="{{ driver.get_absolute_url }}">{{ driver.username }} {% if user == driver %} (Me){% endif %}</a></td>
+        <td>{{ driver.first_name }}</td>
+        <td>{{ driver.last_name }}</td>
+        <td>{{ driver.license_number }}</td>
+      </tr>
+    {% endfor %}
+
+    </table>
+    {% else %}
+      <p>There are no drivers in the service.</p>
+    {% endif %}
+    <div class="bg-image"
+        style="
+
+  background-repeat: no-repeat;
+  background-size: cover;
+    background-image: url(https://prod-images.tcm.com/Master-Profile-Images/taxidriver1976.16448.jpg);
+    height: 435px;
+  ">
+    </div>
+{% endblock %}
