@@ -19,9 +19,10 @@ python manage.py runserver  # starts Django project
 ```
 
 Features
-Authentication functionality for Driver/User
-Managing drivers, cars, manufacturers directly from website
-Powerful admin panel for advanced managing
++ Authentication functionality for Driver/User
++ Managing drivers, cars, manufacturers directly from website
++ Powerful admin panel for advanced managing
+
 Demo
 
 ![img.png](img.png)
