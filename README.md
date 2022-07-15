@@ -3,7 +3,7 @@ Taxi Service
 Django taxi service project for managing cars, manufacturers and drivers.
 
 ## Check it out!
-Taxi service deployed to Heroku(http://taxi-service-tdp1.herokuapp.com/drivers/)
+Taxi service deployed to Heroku(http://taxi-service-tdp1.herokuapp.com/)
 
 `username: user  password: user12345`
 
